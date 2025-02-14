@@ -1,0 +1,208 @@
+/* Estilo global */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background: linear-gradient(to right, #f0f0f0, #dcdcdc);
+    color: #333;
+    padding: 0 10px;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #28a745;
+    padding: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 0 0 10px 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.navbar h1 {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Estilos para los productos */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 40px 20px;
+}
+
+.product {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.product img:hover {
+    transform: scale(1.1);
+}
+
+.product h3 {
+    font-size: 22px;
+    margin: 15px 0;
+    color: #222;
+}
+
+.product p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+}
+
+.product button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.product button:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+}
+
+/* Estilos para la página del carrito */
+#carritoPage {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+#carritoPage ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#carritoPage li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f8f8;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+#carritoPage button.eliminar {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#carritoPage button.eliminar:hover {
+    background-color: #c82333;
+}
+
+/* Estilos para el pie de página */
+.footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 15px 0;
+    background-color: #f1f1f1;
+    border-top: 2px solid #ddd;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Estilos para la página de inicio de sesión y registro */
+#loginPage, #registerPage {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    max-width: 450px;
+    margin: 60px auto;
+}
+
+#loginPage input, #registerPage input {
+    display: block;
+    width: 85%;
+    padding: 14px;
+    margin: 14px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+#loginPage button, #registerPage button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 14px;
+    width: 85%;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#loginPage button:hover, #registerPage button:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+}

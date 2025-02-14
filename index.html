@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrodomésticos MPA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Página de inicio de sesión -->
+    <div id="loginPage">
+        <h2>Iniciar Sesión</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Usuario" required>
+            <input type="password" id="password" placeholder="Contraseña" required>
+            <p><a href="#" id="forgotPasswordLink">¿Olvidaste tu contraseña?</a></p>
+            <button type="submit">Ingresar</button>
+        </form>
+        <!-- Página de recuperación de contraseña -->
+<div id="forgotPasswordPage" style="display: none;">
+    <h2>Recuperar Contraseña</h2>
+    
+    <form id="forgotPasswordForm">
+        <input type="email" id="email" placeholder="Correo electrónico" required>
+        <button type="submit">Enviar enlace de recuperación</button>
+    </form>
+    <div id="resetPasswordSection" style="display: none;">
+        <h2>Actualizar Contraseña</h2>
+        <form id="resetPasswordForm">
+            <input type="text" id="verificationCode" placeholder="Código de verificación" required>
+            <input type="password" id="newPassword" placeholder="Nueva Contraseña" required>
+            <input type="password" id="confirmNewPassword" placeholder="Confirmar Nueva Contraseña" required>
+            <button type="submit">Actualizar Contraseña</button>
+        </form>
+    </div>
+    <p><a href="#" id="backToLogin">Volver al inicio de sesión</a></p>
+</div>
+        <p>¿No tienes cuenta? <a href="#" id="registerLink">Regístrate</a></p>
+    </div>
+
+    <!-- Página de registro -->
+    <div id="registerPage" style="display: none;">
+        <h2>Regístrate</h2>
+        <form id="registerForm">
+            <input type="text" id="newUsername" placeholder="Nuevo Usuario" required>
+            <input type="password" id="newPassword" placeholder="Nueva Contraseña" required>
+            <input type="password" id="confirmPassword" placeholder="Confirmar Contraseña" required>
+            <button type="submit">Registrar</button>
+        </form>
+        <p>¿Ya tienes cuenta? <a href="#" id="loginLink">Inicia sesión</a></p>
+    </div>
+
+    <!-- Página principal -->
+    <div id="mainPage" style="display: none;">
+        <header>
+            <div class="navbar">
+                <h1>Electrodomésticos MPA</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#" id="inicioLink">Inicio</a></li>
+                        <li><a href="#" id="productosLink">Productos</a></li>
+                        <li><a href="#" id="ofertasLink">Ofertas</a></li>
+                        <li><a href="#" id="carritoLink">Carrito</a></li>
+                        <li><a href="#" id="logout">Cerrar Sesión</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="inicioPage" class="page" style="display: block;">
+                <h2>Bienvenido a Electrodomésticos MPA</h2>
+                <p>Explora nuestros productos y ofertas especiales.</p>
+                <img src="https://st3.depositphotos.com/13193658/33287/i/450/depositphotos_332872426-stock-photo-smiling-consultant-pointing-hand-microwave.jpg" alt="Imagen de bienvenida" class="intro-img">
+                <p>Disfruta de la mejor calidad en electrodomésticos con un servicio excepcional.</p>
+            </section>
+
+            <section id="productosPage" class="page" style="display: none;">
+                <h2>Productos destacados</h2>
+                <div class="product-list">
+                    <div class="product">
+                        <img src="https://tse3.mm.bing.net/th?id=OIP.PxukhhJyGDHEpZDR_Q1bMgHaGD&pid=Api" alt="Refrigerador">
+                        <h3>Refrigerador</h3>
+                        <p>Precio: $500</p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.HgFQ0fZHBRqNm-lgcR8OVAHaG0&pid=Api" alt="Lavadora">
+                        <h3>Lavadora</h3>
+                        <p>Precio: $350</p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.140lzThb9tZv73wFhbhtvQHaFj&pid=Api" alt="Microondas">
+                        <h3>Microondas</h3>
+                        <p>Precio: $120</p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                    <div class="product">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.P7zHeT7LqoJlo9ZfFWPfHgHaHa&pid=Api" alt="Cafetera">
+                        <h3>Cafetera</h3>
+                        <p>Precio: $100</p>
+                        <button>Agregar al carrito</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="ofertasPage" class="page" style="display: none;">
+                <h2>Ofertas Especiales</h2>
+                <p>¡Aprovecha nuestros descuentos exclusivos!</p>
+                <img src="https://img.freepik.com/vector-gratis/poster-rebajas-electronicas_1302-5850.jpg?t=st=1738600540~exp=1738604140~hmac=5de12dea99d66f90e19f03410cdf3e4b2c8fb2736d27f5aafd34e0d47975da47&w=360" alt="Ofertas" class="offer-img">
+            </section>
+
+            <section id="carritoPage" class="page" style="display: none;">
+                <h2>Tu Carrito</h2>
+                <p>Aún no tienes productos en tu carrito.</p>
+            </section>
+
+            <section class="footer">
+                <p>&copy; 2025 Electrodomésticos MPA. Kevin Cruz.</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
